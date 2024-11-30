@@ -1,0 +1,8 @@
+C:\Users\andre\Downloads\microControllers_Interfaces\Labo_2.cydsn\Labo_2.cyprj|13b3f749-5e47-46e2-ba90-625ff59a8023
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|00148fc6-1b25-49ae-9bcd-3ebfff1becb0
+C:\Users\andre\OneDrive - UC Leuven-Limburg\Documenten\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|85219a83-1a47-4854-8ec4-7f922254fd16
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|03d5d934-f8ce-4354-aef8-601b490b759a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5cf38edd-0825-4503-adae-193911d2f9c6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2d3736d4-b11c-433f-8607-7452174ca171
+C:\Users\andre\Downloads\microControllers_Interfaces\UART_Theorie01.cydsn\UART_Theorie01.cyprj|840e2dbf-ac7a-4855-a4b3-eab463fc2972
+C:\Users\andre\Downloads\microControllers_Interfaces\SpaceGame.cydsn\SpaceGame.cyprj|3ec4a30d-79e9-4a0a-9d9d-9607190596a5
