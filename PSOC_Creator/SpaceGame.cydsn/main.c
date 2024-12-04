@@ -26,19 +26,19 @@ int main(void)
         led_Write(0);
         if(links_Read() == 0)
         {
-            UART_PutString("0");
+            UART_PutString("0\n");
             led_Write(1);
             CyDelay(500);
         }
         if(rechts_Read() == 0)
         {
-            UART_PutString("1");
+            UART_PutString("1\n");
             led_Write(1);
             CyDelay(500);
         }
         if(schiet_Read() == 0)
         {
-            UART_PutString("2");
+            UART_PutString("2\n");
             led_Write(1);
             CyDelay(500);
         }
