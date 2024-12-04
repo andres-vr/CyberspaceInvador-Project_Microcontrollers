@@ -223,11 +223,11 @@
 #define UART_IntClock__PM_STBY_MSK 0x01u
 
 /* knop */
-#define knop__0__INTTYPE CYREG_PICU2_INTTYPE2
-#define knop__0__MASK 0x04u
-#define knop__0__PC CYREG_PRT2_PC2
+#define knop__0__INTTYPE CYREG_PICU2_INTTYPE5
+#define knop__0__MASK 0x20u
+#define knop__0__PC CYREG_PRT2_PC5
 #define knop__0__PORT 2u
-#define knop__0__SHIFT 2u
+#define knop__0__SHIFT 5u
 #define knop__AG CYREG_PRT2_AG
 #define knop__AMUX CYREG_PRT2_AMUX
 #define knop__BIE CYREG_PRT2_BIE
@@ -242,7 +242,7 @@
 #define knop__INTTYPE_BASE CYDEV_PICU_INTTYPE_PICU2_BASE
 #define knop__LCD_COM_SEG CYREG_PRT2_LCD_COM_SEG
 #define knop__LCD_EN CYREG_PRT2_LCD_EN
-#define knop__MASK 0x04u
+#define knop__MASK 0x20u
 #define knop__PORT 2u
 #define knop__PRT CYREG_PRT2_PRT
 #define knop__PRTDSI__CAPS_SEL CYREG_PRT2_CAPS_SEL
@@ -253,7 +253,7 @@
 #define knop__PRTDSI__OUT_SEL1 CYREG_PRT2_OUT_SEL1
 #define knop__PRTDSI__SYNC_OUT CYREG_PRT2_SYNC_OUT
 #define knop__PS CYREG_PRT2_PS
-#define knop__SHIFT 2u
+#define knop__SHIFT 5u
 #define knop__SLW CYREG_PRT2_SLW
 
 /* incoming */

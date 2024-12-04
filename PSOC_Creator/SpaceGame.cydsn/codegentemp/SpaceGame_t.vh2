@@ -1,5 +1,5 @@
--- Project:   C:\Users\andre\Downloads\microControllers_Interfaces\SpaceGame.cydsn\SpaceGame.cyprj
--- Generated: 11/27/2024 10:22:20
+-- Project:   C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\SpaceGame.cyprj
+-- Generated: 12/04/2024 09:36:25
 -- PSoC Creator  4.4
 
 ENTITY SpaceGame IS
@@ -118,7 +118,7 @@ ARCHITECTURE __DEFAULT__ OF SpaceGame IS
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P12[7]";
     ATTRIBUTE lib_model OF knop(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF knop(0) : LABEL IS "P2[2]";
+    ATTRIBUTE Location OF knop(0) : LABEL IS "P2[5]";
     ATTRIBUTE lib_model OF led(0) : LABEL IS "iocell4";
     ATTRIBUTE Location OF led(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF Net_183 : LABEL IS "macrocell1";

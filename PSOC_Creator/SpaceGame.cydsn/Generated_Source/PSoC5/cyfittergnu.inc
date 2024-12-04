@@ -223,11 +223,11 @@
 .set UART_IntClock__PM_STBY_MSK, 0x01
 
 /* knop */
-.set knop__0__INTTYPE, CYREG_PICU2_INTTYPE2
-.set knop__0__MASK, 0x04
-.set knop__0__PC, CYREG_PRT2_PC2
+.set knop__0__INTTYPE, CYREG_PICU2_INTTYPE5
+.set knop__0__MASK, 0x20
+.set knop__0__PC, CYREG_PRT2_PC5
 .set knop__0__PORT, 2
-.set knop__0__SHIFT, 2
+.set knop__0__SHIFT, 5
 .set knop__AG, CYREG_PRT2_AG
 .set knop__AMUX, CYREG_PRT2_AMUX
 .set knop__BIE, CYREG_PRT2_BIE
@@ -242,7 +242,7 @@
 .set knop__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU2_BASE
 .set knop__LCD_COM_SEG, CYREG_PRT2_LCD_COM_SEG
 .set knop__LCD_EN, CYREG_PRT2_LCD_EN
-.set knop__MASK, 0x04
+.set knop__MASK, 0x20
 .set knop__PORT, 2
 .set knop__PRT, CYREG_PRT2_PRT
 .set knop__PRTDSI__CAPS_SEL, CYREG_PRT2_CAPS_SEL
@@ -253,7 +253,7 @@
 .set knop__PRTDSI__OUT_SEL1, CYREG_PRT2_OUT_SEL1
 .set knop__PRTDSI__SYNC_OUT, CYREG_PRT2_SYNC_OUT
 .set knop__PS, CYREG_PRT2_PS
-.set knop__SHIFT, 2
+.set knop__SHIFT, 5
 .set knop__SLW, CYREG_PRT2_SLW
 
 /* incoming */
