@@ -86,10 +86,7 @@ namespace CyberspaceInvador
             else if (_player.IsDead) { EndGame("alien"); }
         }
 
-        private void gameCanvas_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            _player.ShootLaser(_lasers);
-        }
+
 
         private void EndGame(string winner)
         { 
