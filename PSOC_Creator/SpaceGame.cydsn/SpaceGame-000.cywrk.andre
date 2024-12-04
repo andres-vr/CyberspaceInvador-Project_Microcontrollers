@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\TopDesign</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Pins</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Analog</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Clocks</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Interrupts</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\DMA</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\System</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Directives</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Flash Security</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\EEPROM</v>
+<v>SpaceGame-000\SpaceGame\Header Files</v>
+<v>SpaceGame-000\SpaceGame\Header Files\cyapicallbacks.h</v>
+<v>SpaceGame-000\SpaceGame\Header Files\my_UART.h</v>
+<v>SpaceGame-000\SpaceGame\Source Files</v>
+<v>SpaceGame-000\SpaceGame\Source Files\main.c</v>
+<v>SpaceGame-000\SpaceGame\Source Files\my_UART.c</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\TopDesign</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Pins</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Analog</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Clocks</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Interrupts</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\DMA</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\System</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Directives</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\Flash Security</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.cydwr\EEPROM</v>
+<v>SpaceGame-000\SpaceGame\Header Files</v>
+<v>SpaceGame-000\SpaceGame\Header Files\cyapicallbacks.h</v>
+<v>SpaceGame-000\SpaceGame\Header Files\my_UART.h</v>
+<v>SpaceGame-000\SpaceGame\Source Files</v>
+<v>SpaceGame-000\SpaceGame\Source Files\main.c</v>
+<v>SpaceGame-000\SpaceGame\Source Files\my_UART.c</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cy_boot</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\incoming</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\knop</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\led</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\UART</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\UART_IntClock</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevice.h</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevicerv.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\TopDesign</v>
+<v>SpaceGame-000\SpaceGame\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\TopDesign</v>
+<v>SpaceGame-000\SpaceGame\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.gpdsc</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.rpt</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.gpdsc</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame.rpt</v>
+<v>SpaceGame-000\SpaceGame\SpaceGame_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\PSoC 5LP Architecture TRM</v>
+<v>SpaceGame-000\SpaceGame\CY8C58LP Family Datasheet</v>
+<v>SpaceGame-000\SpaceGame\System Reference Guides</v>
+<v>SpaceGame-000\SpaceGame\System Reference Guides\cy_boot_v6_10</v>
+<v>SpaceGame-000\SpaceGame\cy_isr_v1_70.pdf</v>
+<v>SpaceGame-000\SpaceGame\cy_pins_v2_20</v>
+<v>SpaceGame-000\SpaceGame\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SpaceGame-000\SpaceGame\UART_v2_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SpaceGame-000</v>
+<v>SpaceGame-000\SpaceGame</v>
+<v>SpaceGame-000\SpaceGame\PSoC 5LP Architecture TRM</v>
+<v>SpaceGame-000\SpaceGame\CY8C58LP Family Datasheet</v>
+<v>SpaceGame-000\SpaceGame\System Reference Guides</v>
+<v>SpaceGame-000\SpaceGame\System Reference Guides\cy_boot_v6_10</v>
+<v>SpaceGame-000\SpaceGame\cy_isr_v1_70.pdf</v>
+<v>SpaceGame-000\SpaceGame\cy_pins_v2_20</v>
+<v>SpaceGame-000\SpaceGame\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SpaceGame-000\SpaceGame\UART_v2_50.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
