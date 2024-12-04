@@ -24,14 +24,24 @@ int main(void)
     for(;;)
     {
         led_Write(0);
-        if(knop_Read() == 0)
+        if(links_Read() == 0)
+        {
+            UART_PutString("0");
+            led_Write(1);
+            CyDelay(500);
+        }
+        if(rechts_Read() == 0)
         {
             UART_PutString("1");
             led_Write(1);
             CyDelay(500);
-            UART_PutString("0");
         }
-        CyDelay(500);
+        if(schiet_Read() == 0)
+        {
+            UART_PutString("2");
+            led_Write(1);
+            CyDelay(500);
+        }
     }
 }
 

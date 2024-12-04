@@ -219,20 +219,6 @@
 </file>
 <file name=".\Generated_Source\PSoC5\incoming.c" />
 <file name=".\Generated_Source\PSoC5\incoming.h" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\knop.o">
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\knop.c" />
-<dep name=".\Generated_Source\PSoC5\knop.h" />
-<dep name=".\Generated_Source\PSoC5\knop_aliases.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\cypins.h" />
-<file name=".\Generated_Source\PSoC5\knop.c" />
-<file name=".\Generated_Source\PSoC5\knop.h" />
-<file name=".\Generated_Source\PSoC5\knop_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\led.o">
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
@@ -243,9 +229,49 @@
 <dep name=".\Generated_Source\PSoC5\led.h" />
 <dep name=".\Generated_Source\PSoC5\led_aliases.h" />
 </file>
+<file name=".\Generated_Source\PSoC5\cypins.h" />
 <file name=".\Generated_Source\PSoC5\led.c" />
 <file name=".\Generated_Source\PSoC5\led.h" />
 <file name=".\Generated_Source\PSoC5\led_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\links.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\links.c" />
+<dep name=".\Generated_Source\PSoC5\links.h" />
+<dep name=".\Generated_Source\PSoC5\links_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\links.c" />
+<file name=".\Generated_Source\PSoC5\links.h" />
+<file name=".\Generated_Source\PSoC5\links_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\rechts.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\rechts.c" />
+<dep name=".\Generated_Source\PSoC5\rechts.h" />
+<dep name=".\Generated_Source\PSoC5\rechts_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\rechts.c" />
+<file name=".\Generated_Source\PSoC5\rechts.h" />
+<file name=".\Generated_Source\PSoC5\rechts_aliases.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\schiet.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\schiet.c" />
+<dep name=".\Generated_Source\PSoC5\schiet.h" />
+<dep name=".\Generated_Source\PSoC5\schiet_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\schiet.c" />
+<file name=".\Generated_Source\PSoC5\schiet.h" />
+<file name=".\Generated_Source\PSoC5\schiet_aliases.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
@@ -269,10 +295,14 @@
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\incoming.h" />
-<dep name=".\Generated_Source\PSoC5\knop.h" />
-<dep name=".\Generated_Source\PSoC5\knop_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\led.h" />
 <dep name=".\Generated_Source\PSoC5\led_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\links.h" />
+<dep name=".\Generated_Source\PSoC5\links_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\rechts.h" />
+<dep name=".\Generated_Source\PSoC5\rechts_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\schiet.h" />
+<dep name=".\Generated_Source\PSoC5\schiet_aliases.h" />
 <dep name=".\main.c" />
 <dep name=".\my_UART.h" />
 </file>
@@ -308,10 +338,14 @@
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\incoming.h" />
-<dep name=".\Generated_Source\PSoC5\knop.h" />
-<dep name=".\Generated_Source\PSoC5\knop_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\led.h" />
 <dep name=".\Generated_Source\PSoC5\led_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\links.h" />
+<dep name=".\Generated_Source\PSoC5\links_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\rechts.h" />
+<dep name=".\Generated_Source\PSoC5\rechts_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\schiet.h" />
+<dep name=".\Generated_Source\PSoC5\schiet_aliases.h" />
 <dep name=".\my_UART.c" />
 </file>
 <file name=".\my_UART.c" />
@@ -325,6 +359,19 @@
 <file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
 <file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\knop.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\knop.c" />
+<dep name=".\Generated_Source\PSoC5\knop.h" />
+<dep name=".\Generated_Source\PSoC5\knop_aliases.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\knop.c" />
+<file name=".\Generated_Source\PSoC5\knop.h" />
+<file name=".\Generated_Source\PSoC5\knop_aliases.h" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -343,7 +390,6 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_INT.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_BOOT.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\incoming.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\knop.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\UART_IntClock.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o" />
@@ -355,6 +401,9 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyutils.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cy_em_eeprom.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\led.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\links.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\rechts.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\schiet.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\SpaceGame.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" />
 </file>
@@ -391,6 +440,9 @@
 <name_val_pair name="Generated_Source\PSoC5\led.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="C:\Users\andre\Downloads\microControllers_Interfaces\SpaceGame.cydsn\CortexM3\ARM_GCC_541\Debug\SpaceGame.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\CortexM3\ARM_GCC_541\Debug\SpaceGame.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="Generated_Source\PSoC5\links.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\rechts.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\schiet.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\andre\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\SpaceGame.cyprj -d CY8C5888LTI-LP097 -s C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -593,6 +645,15 @@
 <v>Generated_Source\PSoC5\led_aliases.h</v>
 <v>Generated_Source\PSoC5\led.c</v>
 <v>Generated_Source\PSoC5\led.h</v>
+<v>Generated_Source\PSoC5\links_aliases.h</v>
+<v>Generated_Source\PSoC5\links.c</v>
+<v>Generated_Source\PSoC5\links.h</v>
+<v>Generated_Source\PSoC5\rechts_aliases.h</v>
+<v>Generated_Source\PSoC5\rechts.c</v>
+<v>Generated_Source\PSoC5\rechts.h</v>
+<v>Generated_Source\PSoC5\schiet_aliases.h</v>
+<v>Generated_Source\PSoC5\schiet.c</v>
+<v>Generated_Source\PSoC5\schiet.h</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -602,7 +663,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="133777749862640757" />
+<deps_time v="133777757418176695" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -612,7 +673,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133777749899228570" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="133777757452978323" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: knop.c  
+* File Name: rechts.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "knop.h"
+#include "rechts.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 knop__PORT == 15 && ((knop__MASK & 0xC0) != 0))
+	 rechts__PORT == 15 && ((rechts__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: knop_Write
+* Function Name: rechts_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet knop_SUT.c usage_knop_Write
+*  \snippet rechts_SUT.c usage_rechts_Write
 *******************************************************************************/
-void knop_Write(uint8 value)
+void rechts_Write(uint8 value)
 {
-    uint8 staticBits = (knop_DR & (uint8)(~knop_MASK));
-    knop_DR = staticBits | ((uint8)(value << knop_SHIFT) & knop_MASK);
+    uint8 staticBits = (rechts_DR & (uint8)(~rechts_MASK));
+    rechts_DR = staticBits | ((uint8)(value << rechts_SHIFT) & rechts_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: knop_SetDriveMode
+* Function Name: rechts_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void knop_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet knop_SUT.c usage_knop_SetDriveMode
+*  \snippet rechts_SUT.c usage_rechts_SetDriveMode
 *******************************************************************************/
-void knop_SetDriveMode(uint8 mode)
+void rechts_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(knop_0, mode);
+	CyPins_SetPinDriveMode(rechts_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: knop_Read
+* Function Name: rechts_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void knop_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet knop_SUT.c usage_knop_Read  
+*  \snippet rechts_SUT.c usage_rechts_Read  
 *******************************************************************************/
-uint8 knop_Read(void)
+uint8 rechts_Read(void)
 {
-    return (knop_PS & knop_MASK) >> knop_SHIFT;
+    return (rechts_PS & rechts_MASK) >> rechts_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: knop_ReadDataReg
+* Function Name: rechts_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 knop_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred knop_Read() API because the 
-* knop_ReadDataReg() reads the data register instead of the status 
+* preferred rechts_Read() API because the 
+* rechts_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 knop_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet knop_SUT.c usage_knop_ReadDataReg 
+*  \snippet rechts_SUT.c usage_rechts_ReadDataReg 
 *******************************************************************************/
-uint8 knop_ReadDataReg(void)
+uint8 rechts_ReadDataReg(void)
 {
-    return (knop_DR & knop_MASK) >> knop_SHIFT;
+    return (rechts_DR & rechts_MASK) >> rechts_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(knop_INTSTAT) 
+#if defined(rechts_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: knop_SetInterruptMode
+    * Function Name: rechts_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 knop_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use knop_INTR_ALL to configure the
+    *  component. Or you may use rechts_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - knop_0_INTR       (First pin in the list)
-    *  - knop_1_INTR       (Second pin in the list)
+    *  - rechts_0_INTR       (First pin in the list)
+    *  - rechts_1_INTR       (Second pin in the list)
     *  - ...
-    *  - knop_INTR_ALL     (All pins in Pins component)
+    *  - rechts_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 knop_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet knop_SUT.c usage_knop_SetInterruptMode
+    *  \snippet rechts_SUT.c usage_rechts_SetInterruptMode
     *******************************************************************************/
-    void knop_SetInterruptMode(uint16 position, uint16 mode)
+    void rechts_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & knop_0_INTR) != 0u) 
+		if((position & rechts_0_INTR) != 0u) 
 		{ 
-			 knop_0_INTTYPE_REG = (uint8)mode; 
+			 rechts_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: knop_ClearInterrupt
+    * Function Name: rechts_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 knop_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet knop_SUT.c usage_knop_ClearInterrupt
+    *  \snippet rechts_SUT.c usage_rechts_ClearInterrupt
     *******************************************************************************/
-    uint8 knop_ClearInterrupt(void)
+    uint8 rechts_ClearInterrupt(void)
     {
-        return (knop_INTSTAT & knop_MASK) >> knop_SHIFT;
+        return (rechts_INTSTAT & rechts_MASK) >> rechts_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

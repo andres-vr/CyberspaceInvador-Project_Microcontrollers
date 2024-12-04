@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: knop.h  
+* File Name: rechts.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_knop_ALIASES_H) /* Pins knop_ALIASES_H */
-#define CY_PINS_knop_ALIASES_H
+#if !defined(CY_PINS_rechts_ALIASES_H) /* Pins rechts_ALIASES_H */
+#define CY_PINS_rechts_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define knop_0			(knop__0__PC)
-#define knop_0_INTR	((uint16)((uint16)0x0001u << knop__0__SHIFT))
+#define rechts_0			(rechts__0__PC)
+#define rechts_0_INTR	((uint16)((uint16)0x0001u << rechts__0__SHIFT))
 
-#define knop_INTR_ALL	 ((uint16)(knop_0_INTR))
+#define rechts_INTR_ALL	 ((uint16)(rechts_0_INTR))
 
-#endif /* End Pins knop_ALIASES_H */
+#endif /* End Pins rechts_ALIASES_H */
 
 
 /* [] END OF FILE */

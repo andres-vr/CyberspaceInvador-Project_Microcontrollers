@@ -31,11 +31,13 @@ set_location "\UART:BUART:tx_state_1\" macrocell 0 2 0 1
 set_location "\UART:BUART:rx_state_3\" macrocell 1 0 0 2
 set_location "\UART:BUART:tx_state_0\" macrocell 1 2 0 0
 set_location "\UART:BUART:pollcount_1\" macrocell 0 0 1 1
+set_io "links(0)" iocell 2 5
 # Note: port 12 is the logical name for port 7
 set_io "Rx_1(0)" iocell 12 6
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_io "knop(0)" iocell 2 5
+set_io "schiet(0)" iocell 2 6
 # Note: port 12 is the logical name for port 7
 set_io "Tx_1(0)" iocell 12 7
 set_location "incoming" interrupt -1 -1 0
 set_io "led(0)" iocell 2 1
+set_io "rechts(0)" iocell 2 2
