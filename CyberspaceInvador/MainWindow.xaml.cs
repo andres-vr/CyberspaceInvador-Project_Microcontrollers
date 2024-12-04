@@ -119,16 +119,26 @@ namespace CyberspaceInvador
         {
             try
             {
+                MessageBox.Show("Data received");
                 string data = serialPort.ReadExisting();  // Read data from serial port
-                if (data == "0")//links
+                MessageBox.Show(data);
+                if (data == "0") //links
                 {
                     _player.Move(targetX - 5);
                 }
-                else if (data == "1") //
-                { 
+                else if (data == "1") //rechts
+                {
                     _player.Move(targetX + 5);
                 }
-                
+                else if (data == "2") //schieten
+                {
+                    _player.ShootLaser(_lasers);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid data received");
+                }
+
 
                 // Update the UI in a thread-safe way
                 /* Dispatcher.Invoke(() => {
