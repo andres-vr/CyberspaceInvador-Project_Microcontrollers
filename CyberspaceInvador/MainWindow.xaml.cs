@@ -119,17 +119,16 @@ namespace CyberspaceInvador
             try
             {
                 string data = serialPort.ReadExisting();  // Read data from serial port
-                MessageBox.Show(data);
                 Dispatcher.Invoke(() =>
                 {
                     if (data == "0") // Move left
                     {
-                        targetX = targetX - 5;
+                        targetX = targetX - 15;
                         _player.Move(targetX);
                     }
                     else if (data == "1") // Move right
                     {
-                        targetX = targetX +5;
+                        targetX = targetX + 15;
                         _player.Move(targetX);
                     }
                     else if (data == "2") // Shoot
