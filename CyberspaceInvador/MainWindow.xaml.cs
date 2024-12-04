@@ -38,6 +38,8 @@ namespace CyberspaceInvador
 
         private SerialPort serialPort;
 
+        int targetX;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -59,6 +61,8 @@ namespace CyberspaceInvador
             _bombTimer.Tick += _bombTimer_Tick;
             _bombTimer.Start();
 
+            targetX =Convert.ToInt32( gameCanvas.Width / 2);
+            _player.Move(targetX);
 
         }
 
@@ -79,12 +83,7 @@ namespace CyberspaceInvador
             if (_alien.IsDead) { EndGame("player"); }
             else if (_player.IsDead) { EndGame("alien"); }
         }
-        private void gameCanvas_MouseMove(object sender, MouseEventArgs e)
-        {
-            var targetX = (int)(e.GetPosition(gameCanvas).X - _player.Width / 2);
-            //                                 tov van   player in midden van de muis
-            _player.Move(targetX);
-        }
+
         private void gameCanvas_MouseUp(object sender, MouseButtonEventArgs e)
         {
             _player.ShootLaser(_lasers);
@@ -96,12 +95,11 @@ namespace CyberspaceInvador
             _bombTimer.Stop();
             MessageBox.Show($"game over - {winner} wins");
             Environment.Exit(0);
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string hoi = "hoi";
-            MessageBox.Show(hoi);
             // Setup serial port
             serialPort = new SerialPort("COM5", 57600, Parity.None, 8, StopBits.One);
             serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
@@ -122,17 +120,15 @@ namespace CyberspaceInvador
             try
             {
                 string data = serialPort.ReadExisting();  // Read data from serial port
-                if (data != "0")
+                if (data == "0")//links
                 {
-                    MessageBox.Show(data);
-                    if (data == "1")
-                    {
-                        MessageBox.Show("123");
-                        int xValue = 765 / 2;
-                        xValue += left;
-                        //_player.Move(xValue);
-                    }
+                    _player.Move(targetX - 5);
                 }
+                else if (data == "1") //
+                { 
+                    _player.Move(targetX + 5);
+                }
+                
 
                 // Update the UI in a thread-safe way
                 /* Dispatcher.Invoke(() => {
