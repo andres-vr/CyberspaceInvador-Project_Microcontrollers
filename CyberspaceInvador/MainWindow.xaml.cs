@@ -40,9 +40,11 @@ namespace CyberspaceInvador
 
         int targetX;
 
+
         public MainWindow()
         {
             InitializeComponent();
+            connectPort();
             _player.DisplayOn(gameCanvas);
             _alien.DisplayOn(gameCanvas);
             _wall.DisplayOn(gameCanvas);
@@ -98,7 +100,7 @@ namespace CyberspaceInvador
             
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void connectPort()
         {
             // Setup serial port
             serialPort = new SerialPort("COM5", 57600, Parity.None, 8, StopBits.One);
