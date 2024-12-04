@@ -124,11 +124,13 @@ namespace CyberspaceInvador
                 {
                     if (data == "0") // Move left
                     {
-                        _player.Move(targetX - 5);
+                        targetX = -5;
+                        _player.Move(targetX);
                     }
                     else if (data == "1") // Move right
                     {
-                        _player.Move(targetX + 5);
+                        targetX = +5;
+                        _player.Move(targetX);
                     }
                     else if (data == "2") // Shoot
                     {
