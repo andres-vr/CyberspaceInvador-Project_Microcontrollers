@@ -66,6 +66,9 @@ namespace CyberspaceInvador
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
 
+            int code = 1;
+            SendData((byte)(code));
+
         }
 
         private void _bombTimer_Tick(object? sender, EventArgs e)
@@ -111,6 +114,22 @@ namespace CyberspaceInvador
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to connect: {ex.Message}");
+            }
+        }
+
+        public void SendData(byte data)
+        {
+            if (serialPort != null && serialPort.IsOpen)
+            {
+                try
+                {
+                    serialPort.Write(data);
+                    MessageBox.Show("data send");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error sending data: {ex.Message}");
+                }
             }
         }
 
