@@ -66,8 +66,8 @@ namespace CyberspaceInvador
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
 
-            int code = 1;
-            SendData((byte)(code));
+            string code = "5";
+            SendData(code);
 
         }
 
@@ -117,20 +117,17 @@ namespace CyberspaceInvador
             }
         }
 
-        public void SendData(byte data)
+        public void SendData(string data)
         {
-            if (serialPort != null && serialPort.IsOpen)
-            {
                 try
                 {
-                    serialPort.Write(data);
-                    MessageBox.Show("data send");
+                MessageBox.Show("data send");
+                serialPort.Write(data);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error sending data: {ex.Message}");
                 }
-            }
         }
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
@@ -156,7 +153,7 @@ namespace CyberspaceInvador
                     }
                     else
                     {
-                        MessageBox.Show("Invalid data received");
+                        MessageBox.Show(data);
                     }
                 });
 
