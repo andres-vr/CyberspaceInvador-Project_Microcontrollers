@@ -12,6 +12,7 @@
 #include "project.h"
 #include "my_UART.h"
 #include "string.h"
+#include "getdata.h"
 
 int main(void)
 {
@@ -23,6 +24,7 @@ int main(void)
 
     for(;;)
     {
+        ReceiveData(); 
         led_Write(0);
         if(links_Read() == 0)
         {
