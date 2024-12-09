@@ -156,12 +156,6 @@ namespace CyberspaceInvador
                         MessageBox.Show(data);
                     }
                 });
-
-                // Update the UI in a thread-safe way
-                /* Dispatcher.Invoke(() => {
-                     ReceivedDataTextBox.AppendText(data + Environment.NewLine);  // Append data to the text box
-                     ReceivedDataTextBox.ScrollToEnd();  // Auto-scroll to the latest message
-                 });*/
             }
             catch (Exception ex)
             {
