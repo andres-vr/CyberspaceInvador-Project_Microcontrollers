@@ -66,7 +66,7 @@ namespace CyberspaceInvador
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
 
-            string code = "5";
+            string code = "5\n";
             SendData(code);
 
         }
@@ -152,9 +152,7 @@ namespace CyberspaceInvador
                         _player.ShootLaser(_lasers);
                     }
                     else
-                    {
-                        MessageBox.Show(data);
-                    }
+                    { }
                 });
             }
             catch (Exception ex)
