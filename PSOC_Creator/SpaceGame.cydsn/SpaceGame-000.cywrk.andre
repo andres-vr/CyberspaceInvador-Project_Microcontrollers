@@ -68,11 +68,12 @@
 <v>SpaceGame-000\SpaceGame\Source Files\my_UART.c</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\alien</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cy_boot</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\incoming</v>
-<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\led</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\links</v>
+<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\player</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\rechts</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\schiet</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\UART</v>
@@ -82,7 +83,6 @@
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cycodeshareimport.scat</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevice.h</v>
 <v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>SpaceGame-000\SpaceGame\Generated_Source\PSoC5\cydevicegnu.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -107,6 +107,7 @@
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\alien.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -120,10 +121,10 @@
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\getdata.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\incoming.lst</v>
-<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\led.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\links.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\my_UART.lst</v>
+<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\player.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\rechts.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\schiet.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
@@ -145,6 +146,7 @@
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\alien.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
@@ -158,10 +160,10 @@
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\getdata.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\incoming.lst</v>
-<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\led.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\links.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\my_UART.lst</v>
+<v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\player.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\rechts.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\schiet.lst</v>
 <v>SpaceGame-000\SpaceGame\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
@@ -230,7 +232,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1199, 535" SelectedTabbedMdiWindow="4a3102f7-d706-460a-8738-dbfb13f07da8"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4a3102f7-d706-460a-8738-dbfb13f07da8" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\SpaceGame.cydwr" Guid="42db6de8-48d0-4ca5-8db8-aba8d3337935" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\main.c" Guid="a023f8bc-b7a1-4ba6-aea4-d0eca6a6df60" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\TopDesign\TopDesign.cysch" Guid="e24fc142-4f34-4d15-a745-eca7f0e270f9" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\my_UART.h" Guid="1dd422e0-c64e-4c91-82e4-3223968fa962" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\my_UART.c" Guid="9a547f07-fb5e-4d54-8b3a-b64dd907c14d" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\cyapicallbacks.h" Guid="cff07f8a-462b-4ff2-a3f3-3140f0ed13ab" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\getdata.h" Guid="1030b284-998a-4d05-b484-839093b494b1" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\getdata.c" Guid="0237c4fd-00ab-4482-bfd5-32e17c243035" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1176, 535" SelectedTabbedMdiWindow="a023f8bc-b7a1-4ba6-aea4-d0eca6a6df60"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4a3102f7-d706-460a-8738-dbfb13f07da8" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\SpaceGame.cydwr" Guid="42db6de8-48d0-4ca5-8db8-aba8d3337935" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\main.c" Guid="a023f8bc-b7a1-4ba6-aea4-d0eca6a6df60" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\TopDesign\TopDesign.cysch" Guid="e24fc142-4f34-4d15-a745-eca7f0e270f9" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\my_UART.h" Guid="1dd422e0-c64e-4c91-82e4-3223968fa962" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\my_UART.c" Guid="9a547f07-fb5e-4d54-8b3a-b64dd907c14d" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\cyapicallbacks.h" Guid="cff07f8a-462b-4ff2-a3f3-3140f0ed13ab" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\getdata.h" Guid="1030b284-998a-4d05-b484-839093b494b1" /><DocumentWindow Key="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\getdata.c" Guid="0237c4fd-00ab-4482-bfd5-32e17c243035" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

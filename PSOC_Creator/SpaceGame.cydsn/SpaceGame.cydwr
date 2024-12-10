@@ -252,9 +252,10 @@
   <Group key="DWRInstGuidMapping">
     <Group key="Pin">
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="links" />
+      <Data key="4339e7be-2099-4604-8bf2-9d40a064cd5d" value="alien" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
       <Data key="a84d87b5-53c2-4f20-adbd-abe3329db1d6" value="schiet" />
-      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="led" />
+      <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="player" />
       <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="Tx_1" />
       <Data key="fcec0944-76c5-49e0-8dfb-ba8ec4ac40de" value="rechts" />
     </Group>
@@ -3348,6 +3349,11 @@
         <Data key="Port Format" value="2,5" />
       </Group>
     </Group>
+    <Group key="4339e7be-2099-4604-8bf2-9d40a064cd5d">
+      <Group key="0">
+        <Data key="Port Format" value="2,3" />
+      </Group>
+    </Group>
     <Group key="1425177d-0d0e-4468-8bcc-e638e5509a9b">
       <Group key="0">
         <Data key="Port Format" value="12,6" />
@@ -3373,6 +3379,7 @@
         <Data key="Port Format" value="2,2" />
       </Group>
     </Group>
+    <Group key="UnAssigned Pins" />
   </Group>
   <Group key="PlaceDir">
     <Data key="count" value="0" />

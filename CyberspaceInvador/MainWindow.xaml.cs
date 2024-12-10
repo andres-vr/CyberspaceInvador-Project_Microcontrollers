@@ -83,13 +83,13 @@ namespace CyberspaceInvador
 
             if (_alien.IsDead) 
             {
-                SendData("Xp");
+                SendData("Xp\n");
                 Thread.Sleep(5000);
                 EndGame("player");
             }
             else if (_player.IsDead) 
             {
-                SendData("Xa");
+                SendData("Xa\n");
                 Thread.Sleep(5000);
                 EndGame("alien");
             }
@@ -163,7 +163,7 @@ namespace CyberspaceInvador
                     }
                     else
                     {
-                        MessageBox.Show(data);
+                        //MessageBox.Show(data);
                     }
                 });
             }

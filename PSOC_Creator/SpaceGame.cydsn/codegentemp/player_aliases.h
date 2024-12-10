@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: led.h  
+* File Name: player.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_led_ALIASES_H) /* Pins led_ALIASES_H */
-#define CY_PINS_led_ALIASES_H
+#if !defined(CY_PINS_player_ALIASES_H) /* Pins player_ALIASES_H */
+#define CY_PINS_player_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define led_0			(led__0__PC)
-#define led_0_INTR	((uint16)((uint16)0x0001u << led__0__SHIFT))
+#define player_0			(player__0__PC)
+#define player_0_INTR	((uint16)((uint16)0x0001u << player__0__SHIFT))
 
-#define led_INTR_ALL	 ((uint16)(led_0_INTR))
+#define player_INTR_ALL	 ((uint16)(player_0_INTR))
 
-#endif /* End Pins led_ALIASES_H */
+#endif /* End Pins player_ALIASES_H */
 
 
 /* [] END OF FILE */

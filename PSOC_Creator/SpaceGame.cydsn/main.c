@@ -24,17 +24,17 @@ CY_ISR(RX_int)
         //data analyseren en output meegeven
         if (strcmp(buffer, "Xp")) 
         { 
-            led_Write(1);
+            player_Write(1);
             CyDelay(1000);
-            led_Write(0);
+            player_Write(0);
             CyDelay(1000);
             UART_PutString("The Player has won the game!");
         }
-        else if (strcmp(buffer, "Xa")) 
+        if (strcmp(buffer, "Xa")) 
         { 
-            led_Write(1);
+            alien_Write(1);
             CyDelay(1000);
-            led_Write(0);
+            alien_Write(0);
             CyDelay(1000);
             UART_PutString("The Alien has won the game!");
         }

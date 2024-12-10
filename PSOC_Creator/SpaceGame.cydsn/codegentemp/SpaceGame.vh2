@@ -2,7 +2,7 @@
 --	Conversion of SpaceGame.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Dec 10 21:23:49 2024
+--	Tue Dec 10 21:49:40 2024
 --
 
 USE cypress.cypress.all;
@@ -366,11 +366,11 @@ SIGNAL tmpFB_0__links_net_0 : bit;
 SIGNAL tmpIO_0__links_net_0 : bit;
 TERMINAL tmpSIOVREF__links_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__links_net_0 : bit;
-SIGNAL tmpOE__led_net_0 : bit;
-SIGNAL tmpFB_0__led_net_0 : bit;
-SIGNAL tmpIO_0__led_net_0 : bit;
-TERMINAL tmpSIOVREF__led_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__led_net_0 : bit;
+SIGNAL tmpOE__player_net_0 : bit;
+SIGNAL tmpFB_0__player_net_0 : bit;
+SIGNAL tmpIO_0__player_net_0 : bit;
+TERMINAL tmpSIOVREF__player_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__player_net_0 : bit;
 SIGNAL tmpOE__rechts_net_0 : bit;
 SIGNAL tmpFB_0__rechts_net_0 : bit;
 SIGNAL tmpIO_0__rechts_net_0 : bit;
@@ -381,6 +381,11 @@ SIGNAL tmpFB_0__schiet_net_0 : bit;
 SIGNAL tmpIO_0__schiet_net_0 : bit;
 TERMINAL tmpSIOVREF__schiet_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__schiet_net_0 : bit;
+SIGNAL tmpOE__alien_net_0 : bit;
+SIGNAL tmpFB_0__alien_net_0 : bit;
+SIGNAL tmpIO_0__alien_net_0 : bit;
+TERMINAL tmpSIOVREF__alien_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__alien_net_0 : bit;
 SIGNAL \UART:BUART:reset_reg\\D\ : bit;
 SIGNAL \UART:BUART:txn\\D\ : bit;
 SIGNAL \UART:BUART:tx_state_1\\D\ : bit;
@@ -1043,7 +1048,7 @@ links:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__links_net_0);
-led:cy_psoc3_pins_v1_10
+player:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"e851a3b9-efb8-48be-bbb8-b303b216c393",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -1101,10 +1106,10 @@ led:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>(tmpFB_0__led_net_0),
+		fb=>(tmpFB_0__player_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__led_net_0),
-		siovref=>(tmpSIOVREF__led_net_0),
+		io=>(tmpIO_0__player_net_0),
+		siovref=>(tmpSIOVREF__player_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -1112,7 +1117,7 @@ led:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__led_net_0);
+		interrupt=>tmpINTERRUPT_0__player_net_0);
 rechts:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"fcec0944-76c5-49e0-8dfb-ba8ec4ac40de",
 		drive_mode=>"010",
@@ -1253,6 +1258,76 @@ schiet:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__schiet_net_0);
+alien:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"4339e7be-2099-4604-8bf2-9d40a064cd5d",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__alien_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__alien_net_0),
+		siovref=>(tmpSIOVREF__alien_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__alien_net_0);
 \UART:BUART:reset_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\UART:BUART:clock_op\,

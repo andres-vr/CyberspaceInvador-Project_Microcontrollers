@@ -28,15 +28,18 @@
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\links_aliases.h" value="HEADER;;;;;links" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\links.c" value="SOURCE_C;CortexM3;;;;links" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\links.h" value="HEADER;;;;;links" />
-  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\led_aliases.h" value="HEADER;;;;;led" />
-  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\led.c" value="SOURCE_C;CortexM3;;;;led" />
-  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\led.h" value="HEADER;;;;;led" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\player_aliases.h" value="HEADER;;;;;player" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\player.c" value="SOURCE_C;CortexM3;;;;player" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\player.h" value="HEADER;;;;;player" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\rechts_aliases.h" value="HEADER;;;;;rechts" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\rechts.c" value="SOURCE_C;CortexM3;;;;rechts" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\rechts.h" value="HEADER;;;;;rechts" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\schiet_aliases.h" value="HEADER;;;;;schiet" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\schiet.c" value="SOURCE_C;CortexM3;;;;schiet" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\schiet.h" value="HEADER;;;;;schiet" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\alien_aliases.h" value="HEADER;;;;;alien" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\alien.c" value="SOURCE_C;CortexM3;;;;alien" />
+  <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\alien.h" value="HEADER;;;;;alien" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\UART_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_IntClock" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\UART_IntClock.h" value="HEADER;;;;;UART_IntClock" />
   <file name="C:\Users\andre\Downloads\Github_CyberSpace\CyberspaceInvador\PSOC_Creator\SpaceGame.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
