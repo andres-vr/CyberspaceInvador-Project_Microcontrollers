@@ -25,8 +25,6 @@ namespace CyberspaceInvador
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int left = 5;
-
         private Player _player = new Player();
         private Alien _alien = new Alien();
 
@@ -41,8 +39,6 @@ namespace CyberspaceInvador
         private SerialPort serialPort;
 
         int targetX;
-
-        private bool isDataSent = false;
 
 
         public MainWindow()
@@ -88,11 +84,13 @@ namespace CyberspaceInvador
             if (_alien.IsDead) 
             {
                 SendData("Xp");
+                Thread.Sleep(5000);
                 EndGame("player");
             }
             else if (_player.IsDead) 
             {
                 SendData("Xa");
+                Thread.Sleep(5000);
                 EndGame("alien");
             }
         }
@@ -146,10 +144,6 @@ namespace CyberspaceInvador
                 Dispatcher.Invoke(() =>
                 {
                     if (string.IsNullOrEmpty(data))
-                    {
-
-                    }
-                    else if (data.StartsWith('X'))
                     {
 
                     }
