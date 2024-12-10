@@ -14,6 +14,13 @@
 #include "string.h"
 #include "getdata.h"
 
+CY_ISR(RX_int)
+{
+        led_Write(0);
+        CyDelay(1000);
+        led_Write(1);
+        CyDelay(1000);
+}
 int main(void)
 {
     
@@ -21,11 +28,12 @@ int main(void)
     my_UART_start();
     led_Write(1);
     CyDelay(1000);
+    incoming_StartEx(RX_int);
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     for(;;)
     {
-        ReceiveData(); 
+        
 
         if(links_Read() == 0)
         {

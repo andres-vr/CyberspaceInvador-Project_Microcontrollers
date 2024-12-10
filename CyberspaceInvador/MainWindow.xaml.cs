@@ -89,12 +89,12 @@ namespace CyberspaceInvador
 
             if (_alien.IsDead) 
             {
-                //SendData("Xp");
+                SendData("Xp");
                 EndGame("player");
             }
             else if (_player.IsDead) 
             {
-                //SendData("Xa");
+                SendData("Xa");
                 EndGame("alien");
             }
         }
@@ -113,7 +113,7 @@ namespace CyberspaceInvador
         private void connectPort()
         {
             // Setup serial port
-            serialPort = new SerialPort("COM5", 57600, Parity.None, 8, StopBits.One);
+            serialPort = new SerialPort("COM3", 57600, Parity.None, 8, StopBits.One);
             serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
             try
@@ -166,7 +166,7 @@ namespace CyberspaceInvador
                     }
                     else
                     {
-                        MessageBox.Show(data);
+                        
                     }
                 });
             }
