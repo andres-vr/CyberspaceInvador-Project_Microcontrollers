@@ -14,16 +14,6 @@
 
 void ReceiveData()
 {
-    if(UART_GetRxBufferSize() > 0) 
-    {
-        led_Write(0);
-        CyDelay(1000);
-        led_Write(1);
-        CyDelay(1000);
-        UART_ClearRxBuffer();
-    } 
-}
-        /*
         //data inlezen
         char8 receivedNumber = UART_ReadRxData();
         char buffer[20];
@@ -38,7 +28,8 @@ void ReceiveData()
         else if (strcmp(buffer, "Xa")) 
         { 
             UART_PutString("The Alien has won the game!");
-        } 
-        */
+        }
+}
+
 
 

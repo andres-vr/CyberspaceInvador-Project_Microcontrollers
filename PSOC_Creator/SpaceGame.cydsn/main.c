@@ -16,10 +16,20 @@
 
 CY_ISR(RX_int)
 {
-        led_Write(0);
-        CyDelay(1000);
-        led_Write(1);
-        CyDelay(1000);
+        char8 receivedNumber = UART_ReadRxData();
+        char buffer[20];
+
+        sprintf(buffer, "%d", receivedNumber); 
+        
+        //data analyseren en output meegeven
+        if (strcmp(buffer, "Xp")) 
+        { 
+            UART_PutString("The Player has won the game!");
+        }
+        else if (strcmp(buffer, "Xa")) 
+        { 
+            UART_PutString("The Alien has won the game!");
+        }
 }
 int main(void)
 {

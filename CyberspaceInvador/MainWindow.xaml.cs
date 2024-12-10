@@ -69,8 +69,6 @@ namespace CyberspaceInvador
 
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
-
-            SendData("4");
         }
 
         private void _bombTimer_Tick(object? sender, EventArgs e)
@@ -105,7 +103,7 @@ namespace CyberspaceInvador
         { 
             _animationTimer.Stop();
             _bombTimer.Stop();
-            MessageBox.Show($"game over - {winner} wins");
+            //MessageBox.Show($"game over - {winner} wins");
             Environment.Exit(0);
             
         }
@@ -113,7 +111,7 @@ namespace CyberspaceInvador
         private void connectPort()
         {
             // Setup serial port
-            serialPort = new SerialPort("COM3", 57600, Parity.None, 8, StopBits.One);
+            serialPort = new SerialPort("COM5", 57600, Parity.None, 8, StopBits.One);
             serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
             try
@@ -143,12 +141,17 @@ namespace CyberspaceInvador
         {
             try
             {
+                
                 string data = serialPort.ReadExisting(); 
                 Dispatcher.Invoke(() =>
                 {
                     if (string.IsNullOrEmpty(data))
-                    { 
-                    
+                    {
+
+                    }
+                    else if (data.StartsWith('X'))
+                    {
+
                     }
                     else if (data == "0\n" || data == "0") // Move left
                     {
@@ -166,7 +169,7 @@ namespace CyberspaceInvador
                     }
                     else
                     {
-                        
+                        MessageBox.Show(data);
                     }
                 });
             }
