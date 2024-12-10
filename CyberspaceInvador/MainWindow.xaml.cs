@@ -42,6 +42,8 @@ namespace CyberspaceInvador
 
         int targetX;
 
+        private bool isDataSent = false;
+
 
         public MainWindow()
         {
@@ -67,6 +69,8 @@ namespace CyberspaceInvador
 
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
+
+            SendData("4");
         }
 
         private void _bombTimer_Tick(object? sender, EventArgs e)
@@ -85,12 +89,12 @@ namespace CyberspaceInvador
 
             if (_alien.IsDead) 
             {
-                SendData("p\n");
+                //SendData("Xp");
                 EndGame("player");
             }
             else if (_player.IsDead) 
             {
-                SendData("a\n");
+                //SendData("Xa");
                 EndGame("alien");
             }
         }
@@ -115,7 +119,6 @@ namespace CyberspaceInvador
             try
             {
                 serialPort.Open();
-                MessageBox.Show("Connected to PSoC on COM5");
             }
             catch (Exception ex)
             {
@@ -127,7 +130,7 @@ namespace CyberspaceInvador
         {
                 try
                 {
-                serialPort.Write(data);
+                serialPort.WriteLine(data);
                 serialPort.BaseStream.Flush();
                 }
                 catch (Exception ex)
@@ -140,11 +143,13 @@ namespace CyberspaceInvador
         {
             try
             {
-                string data = serialPort.ReadExisting();  // Read data from serial port
+                string data = serialPort.ReadExisting(); 
                 Dispatcher.Invoke(() =>
                 {
-                    if (data == "" || data == null || data == "\n" )
-                    { }
+                    if (string.IsNullOrEmpty(data))
+                    { 
+                    
+                    }
                     else if (data == "0\n" || data == "0") // Move left
                     {
                         targetX = targetX - 15;
