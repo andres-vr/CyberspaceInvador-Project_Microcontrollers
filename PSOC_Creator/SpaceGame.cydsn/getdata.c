@@ -14,15 +14,20 @@
 
 
 void ReceiveData()
-{   
-    if(UART_GetRxBufferSize() > 0) 
+{   if(UART_GetRxBufferSize() > 0) 
     {
-        char receivedNumber = UART_ReadRxData();
-        
-        if (receivedNumber == '5')
-        {
-            led_Write(1);
-            CyDelay(1000);
-        }
+    char8 receivedNumber = UART_ReadRxData();
+    char buffer[20];
+
+    sprintf(buffer, "%c", receivedNumber);  
+    
+    if (buffer[0] == 'a')  
+    { 
+        UART_PutString("The Player has won the game!");
+    }
+    else if (buffer[0] == 'p')
+    { 
+        UART_PutString("The Alien has won the game!");
+    }
     }
 }

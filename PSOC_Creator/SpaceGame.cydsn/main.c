@@ -19,13 +19,13 @@ int main(void)
     
     CyGlobalIntEnable; /* Enable global interrupts. */
     my_UART_start();
- 
+    led_Write(1);
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     for(;;)
     {
         ReceiveData(); 
-        led_Write(0);
+
         if(links_Read() == 0)
         {
             UART_PutString("0\n");

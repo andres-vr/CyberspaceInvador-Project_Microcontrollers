@@ -15,6 +15,8 @@
     using System.Windows.Shapes;
     using System.Windows.Threading;
     using System.Windows.Media.Converters;
+using System.Threading;
+using System.Numerics;
 
 namespace CyberspaceInvador
 {
@@ -65,10 +67,6 @@ namespace CyberspaceInvador
 
             targetX =Convert.ToInt32( gameCanvas.Width / 2);
             _player.Move(targetX);
-
-            string code = "5\n";
-            SendData(code);
-
         }
 
         private void _bombTimer_Tick(object? sender, EventArgs e)
@@ -85,8 +83,16 @@ namespace CyberspaceInvador
             _bombs.CheckHit(_player);
             _lasers.CheckHit(_alien);
 
-            if (_alien.IsDead) { EndGame("player"); }
-            else if (_player.IsDead) { EndGame("alien"); }
+            if (_alien.IsDead) 
+            {
+                SendData("p\n");
+                EndGame("player");
+            }
+            else if (_player.IsDead) 
+            {
+                SendData("a\n");
+                EndGame("alien");
+            }
         }
 
 
@@ -121,8 +127,8 @@ namespace CyberspaceInvador
         {
                 try
                 {
-                MessageBox.Show("data send");
                 serialPort.Write(data);
+                serialPort.BaseStream.Flush();
                 }
                 catch (Exception ex)
                 {
@@ -137,22 +143,26 @@ namespace CyberspaceInvador
                 string data = serialPort.ReadExisting();  // Read data from serial port
                 Dispatcher.Invoke(() =>
                 {
-                    if (data == "0") // Move left
+                    if (data == "" || data == null || data == "\n" )
+                    { }
+                    else if (data == "0\n" || data == "0") // Move left
                     {
                         targetX = targetX - 15;
                         _player.Move(targetX);
                     }
-                    else if (data == "1") // Move right
+                    else if (data == "1\n" || data == "1") // Move right
                     {
                         targetX = targetX + 15;
                         _player.Move(targetX);
                     }
-                    else if (data == "2") // Shoot
+                    else if (data == "2\n" || data == "2") // Shoot
                     {
                         _player.ShootLaser(_lasers);
                     }
                     else
-                    { }
+                    {
+                        MessageBox.Show(data);
+                    }
                 });
             }
             catch (Exception ex)
