@@ -1,5 +1,5 @@
 -- Project:   SpaceGame
--- Generated: 12/10/2024 21:49:41
+-- Generated: 12/11/2024 09:14:56
 -- PSoC Creator  4.4
 
 ENTITY SpaceGame IS
@@ -126,13 +126,13 @@ ARCHITECTURE __DEFAULT__ OF SpaceGame IS
     ATTRIBUTE lib_model OF links(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF links(0) : LABEL IS "P2[5]";
     ATTRIBUTE lib_model OF player(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF player(0) : LABEL IS "P2[1]";
+    ATTRIBUTE Location OF player(0) : LABEL IS "P2[3]";
     ATTRIBUTE lib_model OF rechts(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF rechts(0) : LABEL IS "P2[2]";
     ATTRIBUTE lib_model OF schiet(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF schiet(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF alien(0) : LABEL IS "iocell7";
-    ATTRIBUTE Location OF alien(0) : LABEL IS "P2[3]";
+    ATTRIBUTE Location OF alien(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF Net_183 : LABEL IS "macrocell1";
     ATTRIBUTE Location OF Net_183 : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \UART:BUART:counter_load_not\ : LABEL IS "macrocell2";

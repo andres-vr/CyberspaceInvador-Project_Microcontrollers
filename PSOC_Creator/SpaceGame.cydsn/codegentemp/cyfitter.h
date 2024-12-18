@@ -189,11 +189,11 @@
 #define UART_IntClock__PM_STBY_MSK 0x01u
 
 /* alien */
-#define alien__0__INTTYPE CYREG_PICU2_INTTYPE3
-#define alien__0__MASK 0x08u
-#define alien__0__PC CYREG_PRT2_PC3
+#define alien__0__INTTYPE CYREG_PICU2_INTTYPE1
+#define alien__0__MASK 0x02u
+#define alien__0__PC CYREG_PRT2_PC1
 #define alien__0__PORT 2u
-#define alien__0__SHIFT 3u
+#define alien__0__SHIFT 1u
 #define alien__AG CYREG_PRT2_AG
 #define alien__AMUX CYREG_PRT2_AMUX
 #define alien__BIE CYREG_PRT2_BIE
@@ -208,7 +208,7 @@
 #define alien__INTTYPE_BASE CYDEV_PICU_INTTYPE_PICU2_BASE
 #define alien__LCD_COM_SEG CYREG_PRT2_LCD_COM_SEG
 #define alien__LCD_EN CYREG_PRT2_LCD_EN
-#define alien__MASK 0x08u
+#define alien__MASK 0x02u
 #define alien__PORT 2u
 #define alien__PRT CYREG_PRT2_PRT
 #define alien__PRTDSI__CAPS_SEL CYREG_PRT2_CAPS_SEL
@@ -219,7 +219,7 @@
 #define alien__PRTDSI__OUT_SEL1 CYREG_PRT2_OUT_SEL1
 #define alien__PRTDSI__SYNC_OUT CYREG_PRT2_SYNC_OUT
 #define alien__PS CYREG_PRT2_PS
-#define alien__SHIFT 3u
+#define alien__SHIFT 1u
 #define alien__SLW CYREG_PRT2_SLW
 
 /* links */
@@ -257,11 +257,11 @@
 #define links__SLW CYREG_PRT2_SLW
 
 /* player */
-#define player__0__INTTYPE CYREG_PICU2_INTTYPE1
-#define player__0__MASK 0x02u
-#define player__0__PC CYREG_PRT2_PC1
+#define player__0__INTTYPE CYREG_PICU2_INTTYPE3
+#define player__0__MASK 0x08u
+#define player__0__PC CYREG_PRT2_PC3
 #define player__0__PORT 2u
-#define player__0__SHIFT 1u
+#define player__0__SHIFT 3u
 #define player__AG CYREG_PRT2_AG
 #define player__AMUX CYREG_PRT2_AMUX
 #define player__BIE CYREG_PRT2_BIE
@@ -276,7 +276,7 @@
 #define player__INTTYPE_BASE CYDEV_PICU_INTTYPE_PICU2_BASE
 #define player__LCD_COM_SEG CYREG_PRT2_LCD_COM_SEG
 #define player__LCD_EN CYREG_PRT2_LCD_EN
-#define player__MASK 0x02u
+#define player__MASK 0x08u
 #define player__PORT 2u
 #define player__PRT CYREG_PRT2_PRT
 #define player__PRTDSI__CAPS_SEL CYREG_PRT2_CAPS_SEL
@@ -287,7 +287,7 @@
 #define player__PRTDSI__OUT_SEL1 CYREG_PRT2_OUT_SEL1
 #define player__PRTDSI__SYNC_OUT CYREG_PRT2_SYNC_OUT
 #define player__PS CYREG_PRT2_PS
-#define player__SHIFT 1u
+#define player__SHIFT 3u
 #define player__SLW CYREG_PRT2_SLW
 
 /* rechts */

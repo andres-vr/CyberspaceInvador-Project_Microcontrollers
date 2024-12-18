@@ -109,7 +109,7 @@ namespace CyberspaceInvador
         private void connectPort()
         {
             // Setup serial port
-            serialPort = new SerialPort("COM5", 57600, Parity.None, 8, StopBits.One);
+            serialPort = new SerialPort("COM8", 115200, Parity.None, 8, StopBits.One);
             serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
             try
@@ -119,6 +119,7 @@ namespace CyberspaceInvador
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to connect: {ex.Message}");
+                Environment.Exit(0);
             }
         }
 

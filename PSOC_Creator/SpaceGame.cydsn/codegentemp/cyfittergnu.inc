@@ -189,11 +189,11 @@
 .set UART_IntClock__PM_STBY_MSK, 0x01
 
 /* alien */
-.set alien__0__INTTYPE, CYREG_PICU2_INTTYPE3
-.set alien__0__MASK, 0x08
-.set alien__0__PC, CYREG_PRT2_PC3
+.set alien__0__INTTYPE, CYREG_PICU2_INTTYPE1
+.set alien__0__MASK, 0x02
+.set alien__0__PC, CYREG_PRT2_PC1
 .set alien__0__PORT, 2
-.set alien__0__SHIFT, 3
+.set alien__0__SHIFT, 1
 .set alien__AG, CYREG_PRT2_AG
 .set alien__AMUX, CYREG_PRT2_AMUX
 .set alien__BIE, CYREG_PRT2_BIE
@@ -208,7 +208,7 @@
 .set alien__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU2_BASE
 .set alien__LCD_COM_SEG, CYREG_PRT2_LCD_COM_SEG
 .set alien__LCD_EN, CYREG_PRT2_LCD_EN
-.set alien__MASK, 0x08
+.set alien__MASK, 0x02
 .set alien__PORT, 2
 .set alien__PRT, CYREG_PRT2_PRT
 .set alien__PRTDSI__CAPS_SEL, CYREG_PRT2_CAPS_SEL
@@ -219,7 +219,7 @@
 .set alien__PRTDSI__OUT_SEL1, CYREG_PRT2_OUT_SEL1
 .set alien__PRTDSI__SYNC_OUT, CYREG_PRT2_SYNC_OUT
 .set alien__PS, CYREG_PRT2_PS
-.set alien__SHIFT, 3
+.set alien__SHIFT, 1
 .set alien__SLW, CYREG_PRT2_SLW
 
 /* links */
@@ -257,11 +257,11 @@
 .set links__SLW, CYREG_PRT2_SLW
 
 /* player */
-.set player__0__INTTYPE, CYREG_PICU2_INTTYPE1
-.set player__0__MASK, 0x02
-.set player__0__PC, CYREG_PRT2_PC1
+.set player__0__INTTYPE, CYREG_PICU2_INTTYPE3
+.set player__0__MASK, 0x08
+.set player__0__PC, CYREG_PRT2_PC3
 .set player__0__PORT, 2
-.set player__0__SHIFT, 1
+.set player__0__SHIFT, 3
 .set player__AG, CYREG_PRT2_AG
 .set player__AMUX, CYREG_PRT2_AMUX
 .set player__BIE, CYREG_PRT2_BIE
@@ -276,7 +276,7 @@
 .set player__INTTYPE_BASE, CYDEV_PICU_INTTYPE_PICU2_BASE
 .set player__LCD_COM_SEG, CYREG_PRT2_LCD_COM_SEG
 .set player__LCD_EN, CYREG_PRT2_LCD_EN
-.set player__MASK, 0x02
+.set player__MASK, 0x08
 .set player__PORT, 2
 .set player__PRT, CYREG_PRT2_PRT
 .set player__PRTDSI__CAPS_SEL, CYREG_PRT2_CAPS_SEL
@@ -287,7 +287,7 @@
 .set player__PRTDSI__OUT_SEL1, CYREG_PRT2_OUT_SEL1
 .set player__PRTDSI__SYNC_OUT, CYREG_PRT2_SYNC_OUT
 .set player__PS, CYREG_PRT2_PS
-.set player__SHIFT, 1
+.set player__SHIFT, 3
 .set player__SLW, CYREG_PRT2_SLW
 
 /* rechts */
