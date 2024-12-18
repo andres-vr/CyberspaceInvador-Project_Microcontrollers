@@ -50,8 +50,6 @@ int main(void)
 
     for(;;)
     {
-        
-
         if(links_Read() == 0)
         {
             UART_PutString("0\n");
